@@ -12,21 +12,5 @@
 </head>
 <body>
     <h1>Jami DHT Proxy List</h1>
-    <p>JSON file: <code>https://avvdev.github.io/proxy_list.json</code></p>
-    <h2>Available Proxies:</h2>
-    <ul id="proxies"></ul>
-    
-    <script>
-        fetch('proxy_list.json')
-            .then(r => r.json())
-            .then(data => {
-                const list = document.getElementById('proxies');
-                data.forEach(proxy => {
-                    const li = document.createElement('li');
-                    li.textContent = proxy;
-                    list.appendChild(li);
-                });
-            });
-    </script>
 </body>
 </html>
